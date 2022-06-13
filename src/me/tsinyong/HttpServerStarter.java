@@ -39,7 +39,6 @@ public class HttpServerStarter {
                             ByteBuf content = Unpooled.copiedBuffer("收到请求", CharsetUtil.UTF_8);
                             channelHandlerContext.writeAndFlush(content);
                             channelHandlerContext.channel().close();
-
                         }
                     });
                 }
